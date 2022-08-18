@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Sarabun:wght@400;700&display=swap');
+
 :root {
   --font-family-heading: 'Poppins', sans-serif;
-  --font-family-paragraph: Helvetica, sans-serif;
-  --font-family-mono: monospace;
+  --font-family-paragraph: 'Sarabun', sans-serif;
+  --font-family-mono: 'JetBrains Mono';
+  --font-family-monospace: 'JetBrains Mono';
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
   --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};

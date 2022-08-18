@@ -20,14 +20,26 @@ p {
   font-size: 18px;
   line-height: 24px;
 }
+strong {
+  background-color: var(--highlight-color);
+  color: white;
+  padding: 2px 5px;
+}
 
-ol,
 ul {
   margin: 0;
   padding: 0;
+  > li {
+    list-style: disc;
+  }
+}
+
+ol {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  li {
-    list-style: none;
+  > li {
+    list-style: decimal;
   }
 }
 
@@ -79,8 +91,7 @@ ul {
     list-style: disc;
     li {
       font-size: 18px;
-      line-height: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       margin-left: 0;
       @include breakpoint('small') {
         margin-left: 20px;
@@ -129,16 +140,20 @@ ul {
   }
   code,
   pre {
-    font-family: var(--font-family-monospace);
+    font-family: var(--font-family-mono);
   }
   .highlight {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 10px;
     pre {
       border-radius: 3px;
       font-size: 14px;
       line-height: 18px;
       padding: 30px;
       overflow: auto;
-      font-family: var(--font-family-monospace);
+      font-family: var(--font-family-mono);
+      border-radius: 10px;
     }
   }
 }
